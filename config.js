@@ -2,11 +2,13 @@ var path = require('path');
 
 // Users can also provide the testenv configuration at the root folder: https://www.npmjs.com/package/dotenv
 require('dotenv').config({ path: path.join(__dirname, 'testenv') });
+console.log('ISSUER', process.env.ISSUER);
 
-var ISSUER = process.env.ISSUER || 'https://{yourOktaDomain}.com/oauth2/default';
-var CLIENT_ID = process.env.CLIENT_ID || '{clientId}';
-var CLIENT_SECRET = process.env.CLIENT_SECRET || '{clientSecret}';
-var SPA_CLIENT_ID = process.env.SPA_CLIENT_ID || '{spaClientId}';
+
+var ISSUER = process.env.ISSUER || 'https://dev-554898.oktapreview.com/oauth2/default';
+var CLIENT_ID = process.env.CLIENT_ID || '0oano2jhofhP0RkAH0h7';
+var CLIENT_SECRET = process.env.CLIENT_SECRET || 'u6jiTq3KdZV6PD1Qlhb5-QLvwsT4WwN0FqjUiuyc';
+var SPA_CLIENT_ID = process.env.SPA_CLIENT_ID || '0oanlu780h34uKTir0h7';
 var OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK ? true : false;
 
 module.exports = {
