@@ -13,12 +13,12 @@ var OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK 
 
 module.exports = {
   webServer: {
-    port: 8080,
+    port: 3000,
     oidc: {
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       issuer: ISSUER,
-      appBaseUrl: 'http://localhost:8080',
+      appBaseUrl: 'https://okta-sso-demo.herokuapp.com',
       scope: 'openid profile email',
       testing: {
         disableHttpsCheck: OKTA_TESTING_DISABLEHTTPSCHECK
