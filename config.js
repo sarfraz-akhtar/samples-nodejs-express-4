@@ -1,8 +1,8 @@
 var path = require('path');
 
 // Users can also provide the testenv configuration at the root folder: https://www.npmjs.com/package/dotenv
-require('dotenv').config({ path: path.join(__dirname, 'testenv') });
-console.log('ISSUER', process.env.ISSUER);
+// require('dotenv').config({ path: path.join(__dirname, 'testenv') });
+// console.log('ISSUER', process.env.ISSUER);
 
 
 var ISSUER = process.env.ISSUER || 'https://dev-554898.oktapreview.com/oauth2/default';
