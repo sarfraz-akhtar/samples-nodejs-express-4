@@ -11,7 +11,7 @@
   "homepage": "https://github.com/okta/samples-nodejs-express-4",
   "main": "okta-hosted-login/server.js",
   "scripts": {
-    "test": "node okta-hosted-login/server.js"
+    "start": "node okta-hosted-login/server.js"
   },
   "devDependencies": {
     "find-process": "^1.1.0",
