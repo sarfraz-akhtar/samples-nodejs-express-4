@@ -1,0 +1,1 @@
+web: npm run okta-hosted-login-server
