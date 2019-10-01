@@ -41,7 +41,8 @@ module.exports = function SampleWebServer(sampleConfig, extraOidcOptions, homePa
   app.use(session({
     secret: 'this-should-be-very-random',
     resave: true,
-    saveUninitialized: false
+    saveUninitialized: false,
+    maxAge: 60000
   }));
 
   // Provide the configuration to the view layer because we show it on the homepage
