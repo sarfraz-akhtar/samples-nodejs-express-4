@@ -17,7 +17,7 @@
  */
 
 const express = require('express');
-const session = require('express-session');
+// const session = require('express-session');
 const mustacheExpress = require('mustache-express');
 const path = require('path');
 const { ExpressOIDC } = require('@okta/oidc-middleware');
@@ -38,12 +38,12 @@ module.exports = function SampleWebServer(sampleConfig, extraOidcOptions, homePa
 
   const app = express();
 
-  app.use(session({
-    secret: 'this-should-be-very-random',
-    resave: true,
-    saveUninitialized: false,
-    maxAge: 60000
-  }));
+  // app.use(session({
+  //   secret: 'this-should-be-very-random',
+  //   resave: true,
+  //   saveUninitialized: false,
+  //   maxAge: 60000
+  // }));
 
   // Provide the configuration to the view layer because we show it on the homepage
   const displayConfig = Object.assign(
