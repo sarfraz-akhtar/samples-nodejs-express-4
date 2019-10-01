@@ -11,7 +11,7 @@
   "homepage": "https://github.com/okta/samples-nodejs-express-4",
   "main": "okta-hosted-login/server.js",
   "scripts": {
-    "okta-hosted-login-server": "node okta-hosted-login/server.js"
+    "test": "node okta-hosted-login/server.js"
   },
   "devDependencies": {
     "dotenv": "^5.0.1",
