@@ -7,7 +7,7 @@ var OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK 
 
 module.exports = {
   webServer: {
-    port: 3000,
+    port: process.env.PORT || 3000,
     oidc: {
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
